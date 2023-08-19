@@ -1,0 +1,22 @@
+.container{
+    width:100%;
+    height:95%;
+    display:grid;
+    grid-template-columns:auto 35rem;
+    position:fixed;
+}
+.form-wrapper{
+    margin:10px 10px;
+}
+header{
+    margin:10px;
+    align-items:center;
+    display:flex;
+}
+h5,h3{
+    color:black;
+    margin-left:10%;
+}
+.form-container{
+        
+}

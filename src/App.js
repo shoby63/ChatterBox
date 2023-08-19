@@ -1,24 +1,39 @@
-import logo from './logo.svg';
-import './App.css';
+// routes
+// theme
+// components
+import React, { useEffect } from "react";
+// import { useDispatch, useSelector } from "react-redux";
+// import Snackbar from "@mui/material/Snackbar";
+import MuiAlert from "@mui/material/Alert";
+// import ThemeSettings from "./components/settings";
+import ThemeProvider from "./theme";
+import Router from "./routes";
+// import { closeSnackBar } from "./redux/slices/app";
+// import { socket } from "./socket";
+
+const vertical = "bottom";
+const horizontal = "center";
+
+// const Alert = React.forwardRef((props, ref) => (
+//   <MuiAlert elevation={6} ref={ref} variant="filled" {...props} />
+// ));
 
 function App() {
+  // const dispatch = useDispatch();
+
+  // const { severity, message, open } = useSelector(
+  //   (state) => state.app.snackbar
+  // );
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <ThemeProvider>
+        {/* <ThemeSettings> */}
+          {" "}
+          <Router />{" "}
+        {/* </ThemeSettings> */}
+      </ThemeProvider>
+    </>
   );
 }
 
