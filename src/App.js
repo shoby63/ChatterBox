@@ -5,9 +5,9 @@ import React, { useEffect } from "react";
 // import { useDispatch, useSelector } from "react-redux";
 // import Snackbar from "@mui/material/Snackbar";
 import MuiAlert from "@mui/material/Alert";
-// import ThemeSettings from "./components/settings";
+import ThemeSettings from "./components/settings";
 import ThemeProvider from "./theme";
-import Router from "./routes";
+import Router from "./routes/index";
 // import { closeSnackBar } from "./redux/slices/app";
 // import { socket } from "./socket";
 
@@ -30,7 +30,7 @@ function App() {
       <ThemeProvider>
         {/* <ThemeSettings> */}
           {" "}
-          <Router />{" "}
+          <Router />
         {/* </ThemeSettings> */}
       </ThemeProvider>
     </>

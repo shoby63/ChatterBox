@@ -1,5 +1,5 @@
 import { Suspense, lazy } from "react";
-import { Navigate, useRoutes } from "react-router-dom";
+import { Navigate, Route, Routes, Redirect } from "react-router-dom";
 
 // layouts
 import DashboardLayout from "../layouts/dashboard/index";
@@ -7,37 +7,31 @@ import DashboardLayout from "../layouts/dashboard/index";
 // config
 import { DEFAULT_PATH } from "../config";
 import LoadingScreen from "../components/LoadingScreen";
-
+import GeneralApp from '../pages/dashboard/GeneralApp'
 const Loadable = (Component) => (props) => {
   return (
     <Suspense fallback={<LoadingScreen />}>
       <Component {...props} />
     </Suspense>
   );
-};
+};const app ="app"
+console.log(GeneralApp)
 
 export default function Router() {
-  return useRoutes([
-     {
-      path: "/",
-      element: <DashboardLayout />,
-      children: [
-        { element: <Navigate to={DEFAULT_PATH} replace />, index: true },
-        { path: "app", element: <GeneralApp /> },
-        { path: "404", element: <Page404 /> },
-        // { path: "*", element: <Navigate to="/404" replace /> },
-      ],
-    },
-
-    { path: "*", element: <Navigate to="/404" replace /> },
-  ]);
+   return (
+    <Routes>
+      <Route path="/" element={<DashboardLayout/>}>
+      <Route path={app} element={<GeneralApp/>}/>
+        </Route>
+       
+        <Route path="*" element={<Navigate to="/404" />} />
+    </Routes>
+   )
 }
 
-const GeneralApp = Loadable(
-  lazy(() => import("../pages/dashboard/GeneralApp"))
-);
+
 // const Contact = Loadable(lazy(() => import("../sections/dashboard/Contact")));
-const Page404 = Loadable(lazy(() => import("../pages/404")));
+// const Page404 = Loadable(lazy(() => import("../pages/404")));
 
 
 // Settigs

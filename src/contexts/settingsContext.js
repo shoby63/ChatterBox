@@ -63,6 +63,7 @@ const SettingsProvider = ({ children }) => {
   // Mode
 
   const onToggleMode = () => {
+    console.log("triggerd");
     setSettings({
       ...settings,
       themeMode: settings.themeMode === "light" ? "dark" : "light",

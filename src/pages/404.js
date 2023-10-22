@@ -1,8 +1,12 @@
 import React from 'react'
 
 const Page404 = () => {
+  console.log("hello")
   return (
-    <div>404</div>
+    <div style={{
+      width:"100px",
+      height:"100px"
+    }}>404 gjhkhhj</div>
   )
 }
 
