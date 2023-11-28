@@ -5,7 +5,7 @@ import StyledBadge from '../StyledBadge';
 import React from 'react'
 import {useTheme} from '@mui/material/styles'
 //import { d } from '../../redux/store';
-import {toggleSidebar} from '../../redux/slices/app'
+import {toggleSidebar, updateSidebarType} from '../../redux/slices/app'
 import {useDispatch} from 'react-redux'
 const Header = () => {
     const theme =useTheme();

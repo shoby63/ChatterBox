@@ -1,9 +1,7 @@
 import React from "react";
 import { Box, IconButton, Stack ,InputBase,Badge, Button, Divider,Avatar, Typography} from "@mui/material";
-import logo from "../../public/Assets/circle.svg";
 import {styled, alpha} from '@mui/material/styles'
 import { ArchiveBox, CircleDashed, MagnifyingGlass } from "phosphor-react";
-import {Faker,faker} from '@faker-js/faker'
 import { ChatList } from "../../data";
 const ChatElement=({id,name,img,msg,time,online,unread})=>{
   return (

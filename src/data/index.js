@@ -2,7 +2,6 @@ import { faker } from "@faker-js/faker";
 import {
   ChatCircleDots,
   Gear,
-  GearSix,
   Phone,
   SignOut,
   User,
@@ -386,56 +385,56 @@ const Shared_docs = [
   },
 ];
 
-// const Shared_links = [
-//   {
-//     type: "msg",
-//     subtype: "link",
-//     preview: faker.image.cats(),
-//     message: "Yep, I can also do that",
-//     incoming: true,
-//     outgoing: false,
-//   },
-//   {
-//     type: "msg",
-//     subtype: "link",
-//     preview: faker.image.cats(),
-//     message: "Yep, I can also do that",
-//     incoming: true,
-//     outgoing: false,
-//   },
-//   {
-//     type: "msg",
-//     subtype: "link",
-//     preview: faker.image.cats(),
-//     message: "Yep, I can also do that",
-//     incoming: true,
-//     outgoing: false,
-//   },
-//   {
-//     type: "msg",
-//     subtype: "link",
-//     preview: faker.image.cats(),
-//     message: "Yep, I can also do that",
-//     incoming: true,
-//     outgoing: false,
-//   },
-//   {
-//     type: "msg",
-//     subtype: "link",
-//     preview: faker.image.cats(),
-//     message: "Yep, I can also do that",
-//     incoming: true,
-//     outgoing: false,
-//   },
-//   {
-//     type: "msg",
-//     subtype: "link",
-//     preview: faker.image.cats(),
-//     message: "Yep, I can also do that",
-//     incoming: true,
-//     outgoing: false,
-//   },
-// ];
+const Shared_links = [
+  {
+    type: "msg",
+    subtype: "link",
+    preview: faker.image.avatar(),
+    message: "Yep, I can also do that",
+    incoming: true,
+    outgoing: false,
+  },
+  {
+    type: "msg",
+    subtype: "link",
+    preview: faker.image.avatar(),
+    message: "Yep, I can also do that",
+    incoming: true,
+    outgoing: false,
+  },
+  {
+    type: "msg",
+    subtype: "link",
+    preview: faker.image.avatar(),
+    message: "Yep, I can also do that",
+    incoming: true,
+    outgoing: false,
+  },
+  {
+    type: "msg",
+    subtype: "link",
+    preview: faker.image.avatar(),
+    message: "Yep, I can also do that",
+    incoming: true,
+    outgoing: false,
+  },
+  {
+    type: "msg",
+    subtype: "link",
+    preview: faker.image.avatar(),
+    message: "Yep, I can also do that",
+    incoming: true,
+    outgoing: false,
+  },
+  {
+    type: "msg",
+    subtype: "link",
+    preview: faker.image.avatar(),
+    message: "Yep, I can also do that",
+    incoming: true,
+    outgoing: false,
+  },
+];
 
 // export {
 //   Profile_Menu,
@@ -444,8 +443,8 @@ const Shared_docs = [
 //   ChatList,
 //   Chat_History,
   // Message_options,
-//   Shared_links,
-//   Shared_docs,
+//  ,
+//  ,
 //   CallList,
 // };
-export {Nav_Buttons,ChatList,Chat_History,Message_options,Profile_Menu};
+export {Nav_Buttons, Shared_links, Shared_docs,ChatList,Chat_History,Message_options,Profile_Menu};
